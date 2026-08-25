@@ -1,0 +1,267 @@
+{
+  "scenario_name": "German Two-Part Journey: Café and Train Station",
+  "steps": {
+    "0": {
+      "step_name": "Part A Intro - Ready Check",
+      "target_phrase": "ready",
+      "directives": {
+        "on_success": {
+          "talk_style": 1,
+          "tutor_reply": "Welcome! I'm Greta, your guide today. Let's set the scene for Part A: Imagine you have just walked into a cozy, busy café in the heart of Berlin. You walk up to the counter and make eye contact with the barista. Let's start with a friendly greeting. Type 'Hallo' to say hello."
+        },
+        "on_stuck_or_english": {
+          "talk_style": 1,
+          "tutor_reply": "Hi there! I'm Greta, your guide for today. We are going through a two-part German roleplay story—Part A is a café visit, and Part B is a train station scenario. To confirm you're ready to start Part A, just type the word 'ready'."
+        },
+        "on_error": {
+          "talk_style": 1,
+          "tutor_reply": "No worries! To start Part A of our story, simply type the word 'ready'."
+        }
+      },
+      "control_reply": "Welcome to Part A. Please type 'ready' to start the café scenario.",
+      "empty_reply": "Whenever you are ready to begin Part A, type 'ready'."
+    },
+    "1": {
+      "step_name": "Part A - Scene 1: The Greeting",
+      "target_phrase": "Hallo",
+      "directives": {
+        "on_success": {
+          "talk_style": 1,
+          "tutor_reply": "Perfect. The barista smiles back at you. Now, you want to see what drinks they serve today. To politely ask for the menu, you would say 'Die Karte, bitte'. Try typing that now."
+        },
+        "on_stuck_or_english": {
+          "talk_style": 2,
+          "tutor_reply": "In this scene, you just walked up to the counter. Give the barista a simple greeting by typing 'Hallo'."
+        },
+        "on_error": {
+          "talk_style": 2,
+          "tutor_reply": "Watch your spelling! To greet the barista in our story, type 'Hallo'."
+        }
+      },
+      "control_reply": "Please greet the barista by typing 'Hallo'.",
+      "empty_reply": "Type 'Hallo' to greet the barista and continue."
+    },
+    "2": {
+      "step_name": "Part A - Scene 2: Getting the Menu",
+      "target_phrase": "Die Karte, bitte",
+      "directives": {
+        "on_success": {
+          "talk_style": 1,
+          "tutor_reply": "Great job. The barista hands you a small wooden menu. You see teas, pastries, and espresso. Let's go with a classic coffee. To order, type 'Ein Kaffee, bitte'."
+        },
+        "on_stuck_or_english": {
+          "talk_style": 2,
+          "tutor_reply": "Ask to see what they are serving by typing 'Die Karte, bitte'."
+        },
+        "on_error": {
+          "talk_style": 2,
+          "tutor_reply": "Almost. Make sure the barista understands your request. Type exactly: 'Die Karte, bitte'."
+        }
+      },
+      "control_reply": "Please ask the barista for the menu by typing 'Die Karte, bitte'.",
+      "empty_reply": "Type 'Die Karte, bitte' to look at the menu."
+    },
+    "3": {
+      "step_name": "Part A - Scene 3: Ordering Coffee",
+      "target_phrase": "Ein Kaffee, bitte",
+      "directives": {
+        "on_success": {
+          "talk_style": 1,
+          "tutor_reply": "Noted! The barista starts preparing your cup. They pause and look back to see how you take it. Let's ask for milk. Type 'Mit Milch, bitte'."
+        },
+        "on_stuck_or_english": {
+          "talk_style": 2,
+          "tutor_reply": "You've looked at the menu and decided on coffee. Order it by typing 'Ein Kaffee, bitte'."
+        },
+        "on_error": {
+          "talk_style": 2,
+          "tutor_reply": "Just a small typo there. To order the coffee in our scene, type 'Ein Kaffee, bitte'."
+        }
+      },
+      "control_reply": "Please order your drink by typing 'Ein Kaffee, bitte'.",
+      "empty_reply": "Type 'Ein Kaffee, bitte' to place your order."
+    },
+    "4": {
+      "step_name": "Part A - Scene 4: Customizing Coffee",
+      "target_phrase": "Mit Milch, bitte",
+      "directives": {
+        "on_success": {
+          "talk_style": 1,
+          "tutor_reply": "Smooth. They pour the milk in. Before you reach for your wallet, it's a good habit to ask the price. To ask 'How much does this cost?', type 'Wie viel kostet das?'"
+        },
+        "on_stuck_or_english": {
+          "talk_style": 2,
+          "tutor_reply": "The barista needs to know if you want milk. Tell them by typing 'Mit Milch, bitte'."
+        },
+        "on_error": {
+          "talk_style": 2,
+          "tutor_reply": "Close! Make sure to include 'bitte' to be polite. Type 'Mit Milch, bitte'."
+        }
+      },
+      "control_reply": "Please customize your coffee with milk by typing 'Mit Milch, bitte'.",
+      "empty_reply": "Type 'Mit Milch, bitte' to add milk."
+    },
+    "5": {
+      "step_name": "Part A - Scene 5: Asking the Price",
+      "target_phrase": "Wie viel kostet das",
+      "directives": {
+        "on_success": {
+          "talk_style": 1,
+          "tutor_reply": "The barista tells you it is 6 Euros. You've had your coffee, and now it's time to pay. To ask for the bill, type 'Die Rechnung, bitte'."
+        },
+        "on_stuck_or_english": {
+          "talk_style": 2,
+          "tutor_reply": "It's always good to check the price. Ask how much it costs by typing 'Wie viel kostet das?'"
+        },
+        "on_error": {
+          "talk_style": 2,
+          "tutor_reply": "Watch the spelling closely. Type it exactly like this: 'Wie viel kostet das?'"
+        }
+      },
+      "control_reply": "Please inquire about the price by typing 'Wie viel kostet das?'.",
+      "empty_reply": "Type 'Wie viel kostet das?' to ask for the total price."
+    },
+    "6": {
+      "step_name": "Part A - Scene 6: Paying the Bill",
+      "target_phrase": "Die Rechnung, bitte",
+      "directives": {
+        "on_success": {
+          "talk_style": 1,
+          "tutor_reply": "They hand you the receipt and you leave a tip. You grab your coat and head for the door. To conclude Part A and say goodbye to the barista, type 'Tschüss'."
+        },
+        "on_stuck_or_english": {
+          "talk_style": 2,
+          "tutor_reply": "You're finished with your coffee. To ask for the check, type 'Die Rechnung, bitte'."
+        },
+        "on_error": {
+          "talk_style": 2,
+          "tutor_reply": "Almost there. To ask for the bill, type 'Die Rechnung, bitte'."
+        }
+      },
+      "control_reply": "Please ask the barista for the bill by typing 'Die Rechnung, bitte'.",
+      "empty_reply": "Type 'Die Rechnung, bitte' to ask for the bill."
+    },
+    "7": {
+      "step_name": "Part A Completion & Part B Transition",
+      "target_phrase": "Tschüss",
+      "directives": {
+        "on_success": {
+          "talk_style": 1,
+          "tutor_reply": "Fantastic! Part A is complete. Now, let's move right into **Part B**. Imagine you have walked down the street to the Berlin Central Station because you need to travel to Munich. You walk up to the ticket window. Greet the clerk by typing 'Guten Tag'."
+        },
+        "on_stuck_or_english": {
+          "talk_style": 2,
+          "tutor_reply": "Say goodbye to wrap up Part A by typing 'Tschüss'."
+        },
+        "on_error": {
+          "talk_style": 2,
+          "tutor_reply": "Type 'Tschüss' to say goodbye and transition to Part B."
+        }
+      },
+      "control_reply": "Please conclude Part A by typing 'Tschüss'.",
+      "empty_reply": "Type 'Tschüss' to finish Part A."
+    },
+    "8": {
+      "step_name": "Part B - Scene 1: Greeting at Station",
+      "target_phrase": "Guten Tag",
+      "directives": {},
+      "control_reply": "Welcome to Part B. Please greet the station clerk by typing 'Guten Tag'.",
+      "empty_reply": "Type 'Guten Tag' to start Part B."
+    },
+    "9": {
+      "step_name": "Part B - Scene 2: Asking for a Ticket",
+      "target_phrase": "Ein Ticket nach München, bitte",
+      "directives": {},
+      "control_reply": "Please ask for your ticket by typing 'Ein Ticket nach München, bitte'.",
+      "empty_reply": "Type 'Ein Ticket nach München, bitte'."
+    },
+    "10": {
+      "step_name": "Part B - Scene 3: Asking for Train Time",
+      "target_phrase": "Wann fährt der nächste Zug",
+      "directives": {},
+      "control_reply": "Please check the schedule by typing 'Wann fährt der nächste Zug?'.",
+      "empty_reply": "Type 'Wann fährt der nächste Zug?' to check the time."
+    },
+    "11": {
+      "step_name": "Part B - Scene 4: Payment",
+      "target_phrase": "Mit Karte, bitte",
+      "directives": {},
+      "control_reply": "Please specify payment by typing 'Mit Karte, bitte'.",
+      "empty_reply": "Type 'Mit Karte, bitte' to pay."
+    },
+    "12": {
+      "step_name": "Part B - Scene 5: Thanking the Clerk",
+      "target_phrase": "Vielen Dank",
+      "directives": {},
+      "control_reply": "Please thank the clerk by typing 'Vielen Dank'.",
+      "empty_reply": "Type 'Vielen Dank'."
+    },
+    "13": {
+      "step_name": "Part B Conclusion & Wrap-up",
+      "target_phrase": "Auf Wiedersehen",
+      "directives": {},
+      "control_reply": "Please conclude Part B by typing 'Auf Wiedersehen'.",
+      "empty_reply": "Type 'Auf Wiedersehen'."
+    },
+    "14": {
+      "step_name": "Survey - Enjoyment",
+      "target_phrase": "yes or no",
+      "directives": {
+        "on_success": {
+          "talk_style": 1,
+          "tutor_reply": "Thank you for that feedback. Question 2: Did you feel engaged going through both the café and train station scenarios?"
+        },
+        "on_stuck_or_english": {
+          "talk_style": 1,
+          "tutor_reply": "Just type a quick answer in English letting me know if you enjoyed the sessions."
+        },
+        "on_error": {
+          "talk_style": 1,
+          "tutor_reply": "Thank you for that feedback. Question 2: Did you feel engaged going through both scenarios?"
+        }
+      },
+      "control_reply": "Noted. Question 2: Did you feel engaged during our chat today?",
+      "empty_reply": "Did you enjoy the session? Type yes or no."
+    },
+    "15": {
+      "step_name": "Survey - Engagement",
+      "target_phrase": "yes or no",
+      "directives": {
+        "on_success": {
+          "talk_style": 1,
+          "tutor_reply": "Got it, I appreciate that. Final question: Did you feel you could easily follow along with me as your AI tutor guide?"
+        },
+        "on_stuck_or_english": {
+          "talk_style": 1,
+          "tutor_reply": "Just type a quick answer letting me know if you felt engaged."
+        },
+        "on_error": {
+          "talk_style": 1,
+          "tutor_reply": "Got it, I appreciate that. Final question: Did you feel you could easily follow along with me as your AI tutor guide?"
+        }
+      },
+      "control_reply": "Noted. Final question: Did you trust the guidance provided?",
+      "empty_reply": "Did you feel engaged? Type yes or no."
+    },
+    "16": {
+      "step_name": "Survey - Trust & Final Close",
+      "target_phrase": "yes or no",
+      "directives": {
+        "on_success": {
+          "talk_style": 1,
+          "tutor_reply": "Thank you so much for your feedback and for completing both Part A and Part B of the study! Your responses have been successfully saved. Have a wonderful day!"
+        },
+        "on_stuck_or_english": {
+          "talk_style": 1,
+          "tutor_reply": "Thank you for participating! The two-part experience is now complete. Have a wonderful day!"
+        },
+        "on_error": {
+          "talk_style": 1,
+          "tutor_reply": "Thank you so much for your feedback and for completing both Part A and Part B of the study! Your responses have been successfully saved. Have a wonderful day!"
+        }
+      },
+      "control_reply": "Thank you for participating! The study is complete. Goodbye!",
+      "empty_reply": "Did you follow the guide? Type yes or no."
+    }
+  }
+}
